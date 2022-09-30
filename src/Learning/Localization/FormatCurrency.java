@@ -14,9 +14,11 @@ public class FormatCurrency {
         System.out.println(currency.getDisplayName());
         System.out.println(currency.getSymbol());
 
-        NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(chinaLocale);
+        NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(locale);
+        NumberFormat chineseCurrencyFormatter = NumberFormat.getCurrencyInstance(chinaLocale);
         String formattedCurrency = currencyFormatter.format(amount);
+
         System.out.println(formattedCurrency);
+        System.out.println(chineseCurrencyFormatter.format(amount));
     }
 }
-
