@@ -1,4 +1,4 @@
-package Localization;
+package Learning.Localization;
 
 import java.text.NumberFormat;
 import java.util.Currency;
